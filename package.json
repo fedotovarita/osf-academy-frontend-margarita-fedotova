@@ -1,0 +1,23 @@
+{
+  "name": "osf-academy-frontend-margarita-fedotova",
+  "version": "1.0.0",
+  "description": "This repo rocks!",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedotovarita/osf-academy-frontend-margarita-fedotova.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fedotovarita/osf-academy-frontend-margarita-fedotova/issues"
+  },
+  "homepage": "https://github.com/fedotovarita/osf-academy-frontend-margarita-fedotova#readme"
+}
