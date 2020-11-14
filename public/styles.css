@@ -6,6 +6,9 @@ i {
     font-size: 20px;
     color: #b2b2b2;
 }
+p {
+    color: white;
+}
 .uppercase {
     text-transform: uppercase;
     padding-bottom: 10px;
@@ -16,7 +19,6 @@ i {
     flex: 1;
 }
 * {
-    box-sizing: border-box;
     font-family: 'Lato', sans-serif; 
     list-style: none;
     margin: 0px;
@@ -107,7 +109,6 @@ header {
 .menu-burger__header:before{
    top: 5px;
  }
-
  .menu-burger__header.open-menu span {
     opacity:0; 
     transition: 0.5s; 
@@ -127,34 +128,71 @@ header {
 }
 .dropdown-column {
     display: block;
+    padding-bottom: 40px;
 }
 .dropdown-column img {
     margin: 0 auto;
     display: block;
 }
 
-.full-width-image {
-    background: url('images/banner.png') no-repeat;
-    background-size: 100%;
-    display: flex ;
+.popular-items {
+    background-color: #262a32;
 }
+.popular-items-title {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    display:flex;
+
+}
+
+.full-width-image-2 {
+    min-height: 240px;
+    display: inline;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url(images/banner-small.png) ;
+
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-inner {
+    display: block;
+    height: 0;
+    padding-top: 34.7%;
+}
+
 .banner-cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+    text-align: center;
+    line-height: normal;
     }
 .banner-cont h1 {
    font-weight: bolder;
    font-size: 30px;
    color: white;
    display: block; 
-   margin-top: 15px;
-   margin-bottom: 30px;
+   margin-bottom: 25px;
 }
 .banner-cont p {
     font-size: 14px;
-    text-align: center;
 }
 .benefits-content {
     background-color: #45413e;
@@ -229,43 +267,103 @@ footer .container,
 .current-year span {
     font-size: 14px;
 }
-.owl-carousel {
-    display: block;
+#js-carousel {
+    position: relative;
 }
 .owl-dots {
     text-align: center;
-    margin-top: -40px;
-    position: relative;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15px;
     z-index: 5;
-
-  }
+}
 button.owl-dot {
     background-color: #b2b2b2;
 }
-  .owl-carousel button.owl-dot {
+.owl-carousel button.owl-dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #515758;
+    background: #989c9f;
     margin: 0 3px;
   }
-  
-  /* Активный маркер */
 .owl-carousel button.owl-dot.active {
-    background: #515758;
-    border: 1px solid white;
+    background: #989c9f;
+    border: 2px solid white;
   }
 .carousel-item {
     background: #EEEEEE;
-    font-size: 23px;
-    padding: 100px 20px;
-    text-align: center;
     box-sizing: border-box;
     cursor: grab;
     position: relative;
-    height: 230px;
     overflow-wrap: break-word;
+    max-width: 860px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
   }
+.carousel-item img {
+    height: 540px;
+}
+.carousel-div {
+    max-width: 100%;
+}
+.carousel-item span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    line-height: normal;
+    color: white;
+}
+.carousel-text h1{
+    font-size: 30px;
+}
+.carousel-text p {
+    font-size: 17px;
+    font-weight: normal;
+    align-self: flex-start;
+}
+.carousel-text button {
+    padding: 10px 35px;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 3px solid rgba(152,156,159, 0.4);
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+}
+.carousel-text button:active {
+    background-color: rgba(152,156,159, 0.4);
+}
+.owl-carousel .owl-item img {
+    display:block;
+    width: auto;
+}
+@media (min-width: 470px) {
+    .full-width-image-2 {
+        background-image: url(images/banner.png) ;
+    }
+}
+@media (min-width: 769px) {
+    .carousel-div {
+        max-width: 65%;
+    }
+    .owl-carousel .owl-item img {
+        width:100%
+       }
+}
+
+
 /* header {
     padding-left: 50px;
     padding-right: 50px;
@@ -415,9 +513,6 @@ header,
     transform: scale(1.1);
     transition: all 0.5s ease-in-out;
 }
-@media (min-width: 768px) {
-    header {
-        min-height: 60px;
-    } 
+
 } */
 
