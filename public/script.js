@@ -41,6 +41,8 @@ $(document).ready(function() {
     items: 1,
     dots: true,
   })
-
+$('.facebook-banner').click(function(){
+    location.href = 'https://www.facebook.com/OSFDigital/';
+  });
 });
 
