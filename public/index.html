@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script  src="script.js"></script>
     <title>OSF Academy</title>
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container-unset">
             <section class='nav-section'>
                 <div class="menu-burger__header">
                     <span></span>
@@ -29,8 +32,8 @@
                                 <img src="images/strelka.png" alt="" class='link-arrow'>
                             </a>
                             <ul class="submenu hidden">
-                                <li><a class="submenu-links" href="">Product Categories<img src="images/strelka.png" alt="" class='link-arrow'></a>
-                                    <ul class="subsubmenu hidden">
+                                <li><a class="submenu-links submenu-category" href="">Product Categories<img src="images/strelka.png" alt="" class='link-arrow'></a>
+                                    <ul class="subsubmenu product-categories-submenu hidden">
                                         <li><a class="submenu-links" href="">Accesories</a> </li>
                                         <li><a class="submenu-links" href="">Alcohol</a> </li>
                                         <li><a class="submenu-links" href="">Art</a> </li>
@@ -57,7 +60,7 @@
                                         <li><a class="submenu-links" href="">Toys</a> </li>
                                     </ul>
                                 </li>
-                                <li><a href="" class="submenu-links">Sale  <img src="images/strelka.png" alt="" class='link-arrow'></a> 
+                                <li><a href="" class="submenu-links submenu-category">Sale  <img src="images/strelka.png" alt="" class='link-arrow'></a> 
                                     <ul class="subsubmenu hidden ">
                                         <li><a class="submenu-links" href="">Accesories</a> </li>
                                         <li><a class="submenu-links" href="">Alcohol</a> </li>
@@ -69,6 +72,9 @@
                                         <li><a class="submenu-links" href="">Food</a> </li>
                                     </ul>
                                 </li>
+                                <li class="submenu-links">
+                                    <div><img src="images/nav-pic.png" alt="" class='submenu-img'></div>
+                                </li>
                             </ul>
                         </li>
                         <li class='service-nav-link'><a href="" class='nav-list-links'>Company</a>          
@@ -78,9 +84,7 @@
                         <li class='service-nav-link'><a href="" class='nav-list-links'>Contact us</a>
                         </li>
                     </ul>
-                    <span class='dropdown-column img-column'>
-                        <img src="images/nav-pic.png" alt="">
-                    </span>
+                    <div><img src="images/nav-pic.png" alt="" class='dropdown-column img-column'></div>
                 </nav>
             </section>
             <section class="logo">
@@ -91,9 +95,7 @@
                     <img src='images/osf-sign.png' alt='logo'>
                     <img src='images/Academy.png' alt='logo'>
                 </div>
-            </section>
-    
-            
+            </section>    
             <div class='setting-nav'>
                 <ul class='lang-link-nav'>
                     <li>    
@@ -117,54 +119,58 @@
                     <li class="list-buttons-item"><a href=""><img src="images/bag.png" alt="" class='icon-nav'></a></li>
                 </ul>
             </div>
-     </header>        
-    <section class='carousel-section container'>
-        <div class=" carousel-div"> 
-            <div id='js-carousel' class='owl-carousel'>
-                <div class="carousel-item"><img src="images/carousel-1.png" alt="">
-                <span class='carousel-text text-left'>
-                    <h1>Control and manage any device with cloud solutions</h1>
-                    <p>Improve buisness performance and the user experience with the right mix of IoT technology and processes doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo imventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed.</p>
-                    <button>View more</button>
-                </span>
+    </header>       
+    <section class='car-sect'>
+        <div class='container-unset carousel-cont'>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/carousel-1.png" alt="">
+                        <span class='carousel-text text-left'>
+                            <h1>Control and manage any device with cloud solutions</h1>
+                            <p>Improve buisness performance and the user experience with the right mix of IoT technology and processes doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo imventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed.</p>
+                            <button>View more</button>
+                        </span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span class='carousel-text text-centered'>
+                            <h1>Control and manage any device with cloud solutions</h1>
+                            <p>Improve buisness performance and the user experience with the right mix of IoT technology and processes doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo imventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed.</p>
+                            <button>View more</button>
+                        </span>
+                        <img src="images/carousel-2.png" alt=""> </div>
+                    <div class="swiper-slide">
+                        <img src="images/carousel-3.png" alt=""> 
+                        <span class='carousel-text text-right'>
+                            <h1>Control and manage any device with cloud solutions</h1>
+                            <p>Improve buisness performance and the user experience with the right mix of IoT technology and processes doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo imventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed.</p>
+                            <button>View more</button>
+                        </span>
+                    </div>
                 </div>
-                <div class="carousel-item"><img src="images/carousel-2.png" alt="">                
-                    <span class='carousel-text text-centered'>
-                        <h1>Control and manage any device with cloud solutions</h1>
-                        <p>Improve buisness performance and the user experience with the right mix of IoT technology and processes doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo imventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed.</p>
-                        <button>View more</button>
-                    </span>
-                </div>
-                <div class="carousel-item"><img src="images/carousel-4.png" alt="">                
-                    <span class='carousel-text text-right'>
-                        <h1>Control and manage any device with cloud solutions</h1>
-                        <p>Improve buisness performance and the user experience with the right mix of IoT technology and processes doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo imventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed.</p>
-                        <button>View more</button>
-                    </span>
-                </div> 
+                <div class="swiper-pagination"></div>
             </div>
-        </div>
-        <div class='banner'>
-            <div class="banner-right-img">
-                <img src="images/banner-right.png" alt="">
-                <div class="banner-img-text">
-                    <p class="banner-percent-text">55 %</p>
-                    <p class="banner-sales-text">Summer<br> sales</p>
+            <div class='banner-green none'>
+                <div class="banner-right-img">
+                    <img src="images/banner-right.png" alt="">
+                    <div class="banner-img-text">
+                        <p class="banner-percent-text">55 %</p>
+                        <p class="banner-sales-text">Summer<br> sales</p>
+                    </div>
+                </div>
+                <div class='banner-right-text'>
+                    <p class='banner-main-text'>Follow us on Facebook</p>
+                    <p class='subtext'>Sed ut perspiciatis unde omnis iste<br> natus error sit</p>
+                    <button class='facebook-button'><i class="fab fa-facebook-f"></i>Follow</button>
                 </div>
             </div>
-            <div class='banner-right-text'>
-                <p class='banner-main-text'>Follow us on Facebook</p>
-                <p class='subtext'>Sed ut perspiciatis unde omnis iste<br> natus error sit</p>
-                <button class='facebook-banner'><i class="fab fa-facebook-f"></i>Follow</button>
-            </div>
-            
         </div>
     </section>
     <section class='popular-items'>
         <div class='popular-items-title'>
             <hr class="hr-text" data-content="Popular Items">
         </div>
-        <div class="container carousel-div"> 
+        <div class="container-unset carousel-div"> 
             <div id='js-carousel-2' class='owl-carousel'>
                 <div class="carousel-item-2">
                     <img src="images/product_items/Layer 151.png" alt="">
@@ -204,19 +210,24 @@
             </div>
         </div>
     </section>
-    <section class='featured-prod-carousel'>
-        <div class='container'></div>
-    </section>
     <section class='full-width-image-2'>
         <span id="image-inner">
         </span>
-        <div class='container banner-cont'>
+        <div class='container-unset banner-cont'>
             <h1>Banner OSF Theme</h1>
             <p>Sed ut perpiciatis omnis iste natus error sit voluptatem accusantium</p>
         </div> 
     </section>
+    <section class='featured-prod-carousel'>
+        <div class='featured-prod container-unset'>
+            <div class='featured-title'>
+                <p class='big-title'>Featured Products</p>
+                <p class='subtitle'>Unde omnis iste natus error sit voluptatem</p>
+            </div>
+        </div>
+    </section>
     <section class='benefits-content'>
-        <div class="container">
+        <div class="container-unset">
             <div class='focus-benefit benefit-item'>
             <div class='benefit-img'>
                 <img src="images/focus.png" alt="">
@@ -246,14 +257,14 @@
         </div>         
      </section>
     <footer>
-        <div class="container">
-            <div class='current-year'>
-                <span>© Copyright 2019.</span>
-                <span>All Rights Reserved.</span>
-            </div>
+        <div class="container-unset">
             <div class='contact-info'>
                 <ul class='contact-info-items'>
                     <li class='footer-nav-link'>
+                        <div class='current-year'>
+                            <span>© Copyright 2019.</span>
+                            <span>All Rights Reserved.</span>
+                        </div>
                         <a href="" class='footer-list-links'>Contact
                             <img src="images/strelka.png" alt="" class='link-arrow'>
                             <ul class='footer-submenu hidden'>
@@ -274,7 +285,7 @@
                     </li>
                     <li class='footer-nav-link'><a href="" class='footer-list-links'>Categories
                         <img src="images/strelka.png" alt="" class='link-arrow'>
-                        <ul class='footer-submenu hidden'>
+                        <ul class='footer-submenu categories-ul hidden'>
                             <li><a class="footer-submenu-links" href="">Alcohol</a> </li>
                             <li><a class="footer-submenu-links" href="">Art</a> </li>
                             <li><a class="footer-submenu-links" href="">Books</a> </li>
