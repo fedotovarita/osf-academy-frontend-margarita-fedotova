@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script  src="script.js"></script>
@@ -97,6 +96,7 @@
                 </div>
             </section>    
             <div class='setting-nav'>
+                
                 <ul class='lang-link-nav'>
                     <li>    
                         <a href="" class='lang-link'>en
@@ -124,7 +124,7 @@
         <div class='container-unset carousel-cont'>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide main-slide">
                         <img src="images/carousel-1.png" alt="">
                         <span class='carousel-text text-left'>
                             <h1>Control and manage any device with cloud solutions</h1>
@@ -132,14 +132,14 @@
                             <button>View more</button>
                         </span>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide main-slide">
                         <span class='carousel-text text-centered'>
                             <h1>Control and manage any device with cloud solutions</h1>
                             <p>Improve buisness performance and the user experience with the right mix of IoT technology and processes doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo imventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed.</p>
                             <button>View more</button>
                         </span>
                         <img src="images/carousel-2.png" alt=""> </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide main-slide">
                         <img src="images/carousel-3.png" alt=""> 
                         <span class='carousel-text text-right'>
                             <h1>Control and manage any device with cloud solutions</h1>
@@ -170,38 +170,44 @@
         <div class='popular-items-title'>
             <hr class="hr-text" data-content="Popular Items">
         </div>
+        <div class='popular-item'>
+            <div class="popular-item-card">
+            </div> 
+            <button class='more-prod'>MORE</button>
+        </div>
+        
         <div class="container-unset carousel-div"> 
             <div id='js-carousel-2' class='owl-carousel'>
                 <div class="carousel-item-2">
-                    <img src="images/product_items/Layer 151.png" alt="">
+                    <img src="images/product_items/Layer_151.png" alt="">
                 <span class='carousel-description'>
                     <p>Kristina Dam Oak Table With White Marble Top</p>
                     <p>$ 799.55</p>
                 </span>
                 </div> 
                 <div class="carousel-item-2">
-                    <img src="images/product_items/Layer 157.png" alt="">
+                    <img src="images/product_items/Layer_157.png" alt="">
                 <span class='carousel-description'>
                     <p>Hay - About A Lounge Chair AAL 93</p>
                     <p>$ 659.55</p>
                 </span>
                 </div> 
                 <div class="carousel-item-2">
-                    <img src="images/product_items/Layer 153.png" alt="">
+                    <img src="images/product_items/Layer_153.png" alt="">
                 <span class='carousel-description'>
                     <p>Activate Facial Mask and Charcoal Soap</p>
                     <p>$ 125.55</p>
                 </span>
                 </div> 
                 <div class="carousel-item-2">
-                    <img src="images/product_items/Layer 154.png" alt="">
+                    <img src="images/product_items/Layer_154.png" alt="">
                 <span class='carousel-description'>
                     <p>Cocktail Table Walnut | YES</p>
                     <p>$ 299.99</p>
                 </span>
                 </div> 
                 <div class="carousel-item-2">
-                    <img src="images/product_items/Layer 152.png" alt="">
+                    <img src="images/product_items/Layer_152.png" alt="">
                 <span class='carousel-description'>
                     <p>TORY DESK CALENDAR</p>
                     <p>$ 659.55</p>
@@ -223,6 +229,13 @@
             <div class='featured-title'>
                 <p class='big-title'>Featured Products</p>
                 <p class='subtitle'>Unde omnis iste natus error sit voluptatem</p>
+            </div>
+            <div class='hr-featured'><hr class="hr-text-featured" data-content="///"></div>
+            <div class="swiper-container-2">
+                <div class="swiper-wrapper featured-swiper">
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>

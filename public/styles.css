@@ -18,10 +18,22 @@ i {
 .hidden{
     display: none !important;
 }
+:root {
+    --swiper-navigation-size: 22px;
+}
 * {
     font-family: 'Lato', sans-serif; 
     list-style: none;
     margin: 0px;
+}
+.text-left {
+    text-align: left;
+}
+.text-centered {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
 }
 ul {
     padding: 0;
@@ -30,6 +42,14 @@ body {
     display: flex;
     flex-direction: column;
 }
+.link-arrow {
+    padding: 3px;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+/* ////////////HEADER////////////// */
+
 header {
     display: flex;
     height: 80px;
@@ -38,6 +58,7 @@ header {
     z-index: 20;
     background-color: white;
 }
+/* ///////////////////////LOGO////////////////// */
 .logo {
     display: flex;
     flex: 1;
@@ -53,17 +74,12 @@ header {
 {
      display: none;
 }
+/* ///////////////////////NAVIGATION TOP////////////////// */
 .nav-section {
     flex: 0;
 }
 .nav-list-links {
     color: white;
-}
-.link-arrow {
-    padding: 3px;
-}
-.rotate {
-    transform: rotate(180deg);
 }
 .service-nav-link{
     padding: 12px 0px 30px 20px;
@@ -82,8 +98,8 @@ header {
     z-index: 10;
 }
 .menu-burger__header {
-    position: relative; /* задаем относительное позиционирование */
-    width: 30px; /* определяем размеры блока */
+    position: relative; 
+    width: 30px; 
     height: 35px;
     display: block;
     margin-top: 15px;
@@ -148,7 +164,7 @@ header {
     padding-top: 10px;
     max-width: max-content ;
 }
-
+/* ///////////////////////CAROUSEL TOP + BANNER GREEN////////////////// */
 .car-sect {
     margin-top: 80px;
 }
@@ -159,8 +175,22 @@ header {
     background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid white;
 }
-.swiper-slide img {
+.main-slide img {
     width: auto;
+}
+.main-slide span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 1.3;
+    color: white;
 }
 .carousel-text button {
     padding: 10px 35px;
@@ -178,7 +208,7 @@ header {
 .banner-right-img img {
     width: 100%;
 }
-
+/* //////////////////////POPULAR ITEMS CAROUSEL///////////////// */
 .popular-items,
 .featured-prod-carousel  {
     background-color: #262a32;
@@ -213,6 +243,34 @@ header {
     font-size: 20px;
     font-weight: bold;
  }
+ #js-carousel-2 {
+    position: relative;
+}
+.owl-dots {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    z-index: 5;
+}
+button.owl-dot {
+    background-color: #b2b2b2;
+}
+.owl-carousel button.owl-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #989c9f;
+    margin: 0 3px;
+  }
+.owl-carousel button.owl-dot.active {
+    background: #989c9f;
+    border: 2px solid white;
+}
+.carousel-text button:active {
+    background-color: rgba(152,156,159, 0.4);
+}
  .carousel-item-2 {
     cursor: grab;
     overflow-wrap: break-word;
@@ -228,20 +286,27 @@ header {
 }
 .carousel-description {
     position: absolute;
-    bottom: 25px;
+    bottom: 5.5vw;
     left: 0;
     right: 0;
     margin: 5px auto;
 }
 .carousel-description p {
     text-align: center;
+    font-size: 18px;
     padding: 7px;
 }
-
+.popular-item-card {
+    display: none;
+}
+.popular-item {
+    display: none;
+}
+/* ///////////////////////FEATURED ITEMS DISPLAY NONE////////////////// */
 .featured-prod-carousel {
     display: none;
 }
-
+/* ///////////////////////FULL WIDTH BANNER BOTTOM////////////////// */
 .full-width-image-2 {
     min-height: 240px;
     width: 100%;
@@ -255,7 +320,6 @@ header {
     display: block;
     padding-top: 34.7%;
 }
-
 .banner-cont {
     position: absolute;
     top: 0;
@@ -276,6 +340,7 @@ header {
     font-size: 14px;
     color: white;
 }
+/* ///////////////////////BENEFITS ITEMS////////////////// */
 .benefits-content {
     background-color: #45413e;
 }
@@ -305,7 +370,7 @@ header {
 .benefit-text {
     margin: 0;
 }
-
+/* ///////////////////////FOOTER///////////////// */
 footer .container-unset {
     margin-bottom: 50px;
 }
@@ -371,49 +436,6 @@ footer .container-unset,
 .current-year span {
     font-size: 14px;
 }
-#js-carousel-2 {
-    position: relative;
-}
-.owl-dots {
-    text-align: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 15px;
-    z-index: 5;
-}
-button.owl-dot {
-    background-color: #b2b2b2;
-}
-.owl-carousel button.owl-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #989c9f;
-    margin: 0 3px;
-  }
-.owl-carousel button.owl-dot.active {
-    background: #989c9f;
-    border: 2px solid white;
-  }
-
-.swiper-slide span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    line-height: 1.3;
-    color: white;
-}
-.carousel-text button:active {
-    background-color: rgba(152,156,159, 0.4);
-}
 @media (min-width: 470px) {
     .full-width-image-2 {
         background-image: url(images/banner.png) ;
@@ -423,6 +445,10 @@ button.owl-dot {
     .container-unset {
         padding: 15px 22px;
     }
+    .link-arrow {
+        display: none;
+    }
+    /* ///////////////////////MAIN NAVIGATION////////////////// */
     .menu-burger__header {
         display: none;
     }
@@ -497,16 +523,16 @@ button.owl-dot {
     .lang-link-nav li{
         padding: 12px 0px 30px 0px;
     }
-    .service-nav-link a:hover,
-    .service-nav-link a:active {
+    .service-nav-link a:hover{
         color: white;
     }
     .nav-list-links{
         color: black;
     }
+    /* ///////////////////////LOGO///////////////// */
     .logo {
         order: -1;
-        flex: 0;
+        flex: 1;
         align-items: center;
     }
     .logo-pic {
@@ -520,6 +546,7 @@ button.owl-dot {
         flex-direction: column;
         margin-left: 10px;
     }
+    /* //////////////////////NAVIGATION RIGHT////////////////// */
     .personal-btn {
         display: flex;
         flex: 0.6;
@@ -535,9 +562,6 @@ button.owl-dot {
         display: flex;
         flex: 0.5;
     }
-    .logo {
-        flex: 1;
-    }
     .lang-link-nav {
         display: flex;
         justify-content: center;
@@ -547,18 +571,7 @@ button.owl-dot {
         text-transform: uppercase;
         margin-left: 0.5vw;
     }
-    .link-arrow {
-        display: none;
-    }
-    .text-left {
-        text-align: left;
-    }
-    .text-centered {
-        text-align: center;
-    }
-    .text-right {
-        text-align: right;
-    }
+    /* //////////////////////CAROUSEL TOP + BANNER GREEN////////////////// */
     .banner-right-img{
         position: relative;
     }
@@ -624,7 +637,7 @@ button.owl-dot {
     .swiper-container {
         flex: 6;
     }
-    .swiper-slide img {
+    .main-slide img {
         width: 100%;
     }
     .carousel-cont {
@@ -650,15 +663,53 @@ button.owl-dot {
     .hr-text::after {
         font-size: 2.5vw;
     }
+      /* //////////////////////POPULAR ITEMS////////////////// */
     .carousel-div {
         display: none;
     }
+    .popular-item {
+        display: block;
+    }
+    .popular-item-card {
+        display: flex;
+        cursor: grab;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-wrap: break-word;
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+    .popular-item-card div {
+        margin-right: 12px;
+        margin-left: 12px;
+        margin-bottom: 25px;
+    }
+    .popular-item-card img {
+        display: block;
+        width: 100%;
+    }
+    .item {
+        position: relative;
+    }
+    .popular-item-card-description {
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        right: 0;
+    }
+    .popular-item-card-description p {
+        text-align: center;
+        padding: 7px;
+    }
+      /* //////////////////////FULLWIDTH BIG BANNER///////////////// */
     .banner-cont h1 {
         font-size: 4vw;
     }
     .banner-cont p {
         font-size: 2.3vw;
     }
+      /* //////////////////////BENEFITS ITEMS///////////////// */
     .benefits-content .container-unset {
         flex-direction: row;
     }
@@ -681,6 +732,106 @@ button.owl-dot {
     .benefit-text p {
         font-size: 1.2vw;
     } 
+    /* //////////////////////FEATURED PRODUCTS///////////////// */
+    .featured-prod {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    .swiper-container-2 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding-bottom: 5%;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: -5.7vw;
+        color: white
+    }
+    .swiper-button-next {
+        right: 22%;
+    }
+    .swiper-button-prev {
+        left: 22%;
+    }
+    .featured-slide {
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        text-align: center;
+        font-size: 1.6vw;
+    }
+    .featured-slide:hover {
+        background: linear-gradient(to bottom, rgba(135,237,47,0.8) 0%,rgba(128,231,45,0.8) 8%,rgba(47,158,25,1) 100%);
+    }
+    .featured-slide img {
+        width: 100%;
+    }
+    .featured-prod-description {
+        padding: 1vw;   
+        background-color: white;
+        height: 7vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .featured-prod-carousel {
+        display: block;
+    }
+    .featured-title {
+        padding: 2% 0 3% 0;
+    }
+    .featured-prod-description .featured-item-label{
+        color: #84bc22;
+    }
+    .hr-featured {
+        padding: 0 0 4% 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hr-text-featured {
+        position: relative;
+        border: 0;
+        color: white;
+        text-align: center;
+        width: 50vw;
+    }
+    .hr-text-featured:before {
+        content: '';
+        background-color: white;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 2px;
+    }
+    .hr-text-featured:after {
+        content: attr(data-content);
+        position: relative;
+        padding: 0 .5em;
+        line-height: 1.5em;
+        color: white;
+        background-color: #262a32;
+        font-size: 2.5vw;
+        font-weight: bold;
+    }
+    .big-title {
+        color: white;
+        font-size: 2.5vw;
+        font-weight: bold;
+        text-align: center;
+        line-height: 2;
+    }
+    .subtitle {
+        color: white;
+        text-align: center;
+        font-size: 1.4vw;
+    }
+
+    /* //////////////////////FOOTER////////////////// */
     footer .container-unset {
         flex-direction: row;
         justify-content: space-between;
@@ -727,25 +878,6 @@ button.owl-dot {
     .footer-submenu li {
         padding-bottom: 1vw;
     }
-    .featured-prod {
-        align-content: center;
-        justify-content: center;
-    }
-    .featured-prod-carousel {
-        display: block;
-    }
-    .big-title {
-        color: white;
-        font-size: 2.5vw;
-        font-weight: bold;
-        text-align: center;
-        line-height: 2;
-    }
-    .subtitle {
-        color: white;
-        text-align: center;
-        font-size: 1.4vw;
-    }
 }
 @media (min-width: 1000px) {
     .nav-list-links img,
@@ -753,156 +885,3 @@ button.owl-dot {
         display: inherit ;
     }
 }
-
-
-/* header {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 14px;
-    margin-top: -10px;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-}
-header,
-.main-nav ul,
-.personal-btn ul {
-    display: flex;
-    text-transform: uppercase;
-}
-.logo {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    align-items: center;
-    justify-content: flex-start;
-}
-.logo-sign {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-}
-
-.main-nav {
-    display: flex;
-    flex: 1;
-}
-.serv-link {
-    position: relative;
-}
-.dropdown {
-    display: none;
-}
-.show {
-    text-transform: none;
-    display: flex;
-    position: absolute;
-    left: 0px;
-    top: 107px;
-    flex-direction: row;
-    background-color: #262a32;
-    color: white;
-    min-width: 100%;
-    padding: 60px 90px;
-}
-.dropdown-list-items {
-    padding: 0;
-}
-.dropdown-list-items li {
-    padding: 0px 0px 10px 0px;
-}
-.dropdown-column {
-    flex-direction: column;
-    max-height: 380px;
-    column-width: 180px;
-}
-.dropdown-column span {
-    text-transform: uppercase;
-}
-.categories-list {
-    display: flex;
-    flex-direction: column;
-    flex: wrap;
-}
-.categories-column {
-    display: flex;
-    flex: 4;
-}
-.sale-column {
-    display: flex;
-    flex: 2;
-}
-.img-column {
-     display: flex;
-     flex: 1;
-}
-.nav-list {
-    padding: 0px;
-}
-.nav-list li {
-    margin-top: 10px;
-
-}
-.lang-link-nav {
-    padding-left: 0px;
-}
-.nav-list-links {
-    padding-top: 15px;
-    padding-right: 30px;
-    padding-bottom: 28px;
-    padding-left: 15px;
-    border-bottom: 4px solid transparent; 
-}
-.nav-list-links:hover,
-.nav-list li:hover {
-    background-color: #262a32;
-    color: white;
-}
-.nav-list-links:hover {
-    border-bottom: 4px solid #84bc22;
-}
-.link-arrow {
-    padding-left: 5px;
-}
-.setting-nav {
-    display: flex;
-    flex: 0.5;
-}
-.setting-nav ul {
-    display: flex;
-    flex-direction: row;    
-    min-width: 100%;
-    align-items: center;
-    justify-content: space-around;
-}
-.lang-link {
-    color: #aeacab;
-    margin-left: 5px;
-}
-.icon-nav {
-    min-height: 20px;
-    min-width: 20px;
-    margin-left: 40px;
-}
-.list-buttons {
-    padding-right: 10px;
-    padding-left: 0px;
-}
-.personal-btn {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-}
-.icon-nav:hover {
-    transform: scale(1.1);
-    transition: all 0.5s ease-in-out;
-}
-
-} */
