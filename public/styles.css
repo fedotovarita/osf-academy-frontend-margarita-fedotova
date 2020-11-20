@@ -192,7 +192,7 @@ header {
     line-height: 1.3;
     color: white;
 }
-.carousel-text button {
+.main-page-button {
     padding: 10px 35px;
     background-color: transparent;
     border-radius: 100px;
@@ -268,7 +268,7 @@ button.owl-dot {
     background: #989c9f;
     border: 2px solid white;
 }
-.carousel-text button:active {
+.cmain-page-button:active {
     background-color: rgba(152,156,159, 0.4);
 }
  .carousel-item-2 {
@@ -388,6 +388,10 @@ footer .container-unset,
     justify-content: center;
     align-items: center;
 }
+.list-buttons-item:hover {
+    transform: scale(1.15);
+    transition: all 0.5s ease;
+} 
 .footer-submenu li {
     padding-bottom: 10px;
 }
@@ -442,6 +446,9 @@ footer .container-unset,
     }
 }
 @media (min-width: 769px) {
+    .edf {
+        list-style: none;
+    }
     .container-unset {
         padding: 15px 22px;
     }
@@ -652,7 +659,7 @@ footer .container-unset,
         font-weight: normal;
         align-self: flex-start;
     }
-    .carousel-text button {
+    .main-page-button {
         padding: 1vw 3.5vw;
         font-size: 1.6vw;
     }
@@ -668,7 +675,9 @@ footer .container-unset,
         display: none;
     }
     .popular-item {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .popular-item-card {
         display: flex;
@@ -701,6 +710,20 @@ footer .container-unset,
     .popular-item-card-description p {
         text-align: center;
         padding: 7px;
+    }
+    .popular-item .more-prod {
+        display: flex;
+        align-items: center;
+        padding: 0.5vw 0px;
+        width: 16vw;
+        margin: 30px 0;
+        font-size: 1.1vw;
+    }
+    .more-prod p {
+        margin-left: 28%;
+    }
+    .load-arrow{
+        padding-left: 1.4vw;
     }
       /* //////////////////////FULLWIDTH BIG BANNER///////////////// */
     .banner-cont h1 {
@@ -762,9 +785,33 @@ footer .container-unset,
         background-color: transparent;
         text-align: center;
         font-size: 1.6vw;
+        position: relative;
     }
-    .featured-slide:hover {
-        background: linear-gradient(to bottom, rgba(135,237,47,0.8) 0%,rgba(128,231,45,0.8) 8%,rgba(47,158,25,1) 100%);
+    .hover-buttons {
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        right: 0;
+        margin: auto;
+        display: none;
+    }
+    .hover-buttons button {
+        padding: 0.7vw 1.3vw;
+        background-color:white;
+        border: 1px solid black;
+        font-size: 1.2vw;
+    }
+    .hover-button-price {
+        color: #84bc22;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+    .hover-button-buy {
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+    .featured-slide:hover .hover-buttons{
+        display: block;
     }
     .featured-slide img {
         width: 100%;
@@ -772,7 +819,7 @@ footer .container-unset,
     .featured-prod-description {
         padding: 1vw;   
         background-color: white;
-        height: 7vw;
+        height: 7.4vw;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -885,3 +932,27 @@ footer .container-unset,
         display: inherit ;
     }
 }
+
+
+/*////////////////HOVER STATE///////////////// 
+.featured-slide {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    text-align: center;
+    font-size: 1.6vw;
+    position: relative;
+}
+.hover-buttons {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background: linear-gradient(to bottom, rgba(135,237,47,0.3) 0%,rgba(128,231,45,0.5) 8%,rgba(47,158,25,1) 100%);
+    display: none;
+}
+.featured-slide:hover .hover-buttons{
+    display: block;
+} */

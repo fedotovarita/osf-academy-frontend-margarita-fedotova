@@ -8,13 +8,34 @@ function asdf(swiperObject) {
         data.items[i]['name'] +
         '</p><p class="featured-item-label">' +
         data.items[i]['label'] + 
-        '</p></span></div>'
+        '</p></span><div class="hover-buttons"><button class="hover-button-price">' + 
+        data.items[i]['price']+ 
+        '</button><button class="hover-button-buy">BUY NOW</button></div></div>'
       );
     } 
   })
 }
 
+function loadItems(itemCardClass, limit, ofset) {
+  $.getJSON('popular-items.json', function(data){
+    let splicedArray = data.items.splice(ofset, limit);
+    for(var i = 0; i < splicedArray.length; i++) {
+      $(itemCardClass).append(
+        '<div class="item ' + splicedArray[i]['hover-type'] + '"><img id="img-prod" src="' +
+        splicedArray[i]['image'] +
+        '" alt=""><span class="popular-item-card-description"><p id="name-prod">' +
+        splicedArray[i]['name'] +
+        '</p><p id="price-prod">' +
+        splicedArray[i]['price'] + '</p></span></div>'
+      );
+    }
+  })
+}
+
 $(document).ready(function() {
+  let currentYear = new Date();
+  $('.year-js').append(currentYear.getFullYear() + '.');
+  
   $('.menu-burger__header').click(function() {
     $('.menu-burger__header').toggleClass('open-menu');
     $('.main-nav').toggleClass('open-menu');
@@ -92,17 +113,17 @@ $(document).ready(function() {
   });
   asdf(swiper2);
 
-  $('.more-prod').click(function() {
-    $.getJSON('popular-items.json', function(data){
-      for(var i = 0; i < data.items.length; i++) {
-        $('.popular-item-card').append('<div class="item"><img id="img-prod" src="' +
-        data.items[i]['image'] +
-        '" alt=""><span class="popular-item-card-description"><p id="name-prod">' +
-        data.items[i]['name'] +
-        '</p><p id="price-prod">' +
-        data.items[i]['price'] + '</p></span></div>');
-      }
-  })
+  let itemsLoaded = 0;
 
+  loadItems('.popular-item-card', 8, 0);
+  itemsLoaded += 8;
+
+  $('.more-prod').click(function (e) {
+    loadItems('.popular-item-card', 4, itemsLoaded);
+    itemsLoaded += 4;
+    if (itemsLoaded >= 14) {
+      $('.more-prod').addClass('hidden');
+    }
   });
+
 });
