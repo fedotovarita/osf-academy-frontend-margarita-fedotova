@@ -10,7 +10,7 @@ function asdf(swiperObject) {
         data.items[i]['label'] + 
         '</p></span><div class="hover-buttons"><button class="hover-button-price">' + 
         data.items[i]['price']+ 
-        '</button><button class="hover-button-buy">BUY NOW</button></div></div>'
+        '</button><button class="hover-button-buy"><a href="">BUY NOW</a></button></div></div>'
       );
     } 
   })
@@ -20,14 +20,42 @@ function loadItems(itemCardClass, limit, ofset) {
   $.getJSON('popular-items.json', function(data){
     let splicedArray = data.items.splice(ofset, limit);
     for(var i = 0; i < splicedArray.length; i++) {
-      $(itemCardClass).append(
-        '<div class="item ' + splicedArray[i]['hover-type'] + '"><img id="img-prod" src="' +
-        splicedArray[i]['image'] +
-        '" alt=""><span class="popular-item-card-description"><p id="name-prod">' +
-        splicedArray[i]['name'] +
-        '</p><p id="price-prod">' +
-        splicedArray[i]['price'] + '</p></span></div>'
-      );
+      switch (splicedArray[i]['type']) {
+        case 'hover-with-buttons':
+          $(itemCardClass).append(
+            '<div class="item hover-with-buttons"><img id="img-prod" src="' +
+            splicedArray[i]['image'] +
+            '" alt=""><span class="popular-item-card-description"><p id="name-prod">' +
+            splicedArray[i]['name'] +
+            '</p><p id="price-prod">' +
+            splicedArray[i]['price'] + '</p></span><div class="hover-buttons-popular"><button class="hover-button-price"><a href=""><p class="button-p">' + 
+            splicedArray[i]['price']+ 
+            '</p></a></button><button class="hover-button-buy"><a href=""><p class="button-p">BUY NOW</p></a></button></div></div>'
+          )
+          break;
+        case 'hover-gradient':
+          $(itemCardClass).append(
+            '<div class="item hover-gradient"><img id="img-prod" src="' +
+            splicedArray[i]['image'] +
+            '" alt=""><span class="popular-item-card-description"><p id="name-prod">' +
+            splicedArray[i]['name'] +
+            '</p><p id="price-prod">' +
+            splicedArray[i]['price'] + '</p></span><div class="hover-buttons-popular"><button class="hover-button-price"><a href=""><i class="fas fa-plus"></i></a></button><button class="hover-button-buy"><a href=""><i class="fas fa-heart"></i></a></button></div></div>'
+          )
+          break;
+        case 'static':
+          $(itemCardClass).append(
+            '<div class="item static"><div class="gradient-static"></div><img id="img-prod" src="' +
+            splicedArray[i]['image'] +
+            '" alt=""><span class="static-card-description"><p id="name-prod">' +
+            splicedArray[i]['name'] + 
+            '</p><span class="static-description-time"><img id="img-prod" src="' +
+            splicedArray[i]['icon'] +
+            '" alt=""><p id="price-prod">' +
+            splicedArray[i]['time'] + '</p></span></span></div>'
+          )
+          break;
+      }
     }
   })
 }

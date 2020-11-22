@@ -689,19 +689,23 @@ footer .container-unset,
         overflow: hidden;
         margin: 0 auto;
       }
-    .popular-item-card div {
+    .popular-item-card .item {
         margin-right: 12px;
         margin-left: 12px;
         margin-bottom: 25px;
     }
-    .popular-item-card img {
+    .popular-item-card img,
+    .static img {
         display: block;
         width: 100%;
     }
-    .item {
+    .item,
+    .hover-with-buttons, 
+    .hover-gradient {
         position: relative;
     }
-    .popular-item-card-description {
+    .popular-item-card-description,
+    .static-card-description {
         position: absolute;
         bottom: 15px;
         left: 0;
@@ -725,7 +729,93 @@ footer .container-unset,
     .load-arrow{
         padding-left: 1.4vw;
     }
-      /* //////////////////////FULLWIDTH BIG BANNER///////////////// */
+    .hover-buttons-popular {
+        opacity: 0;
+        position: absolute;
+        transition: all 0.3s;
+    }
+    .hover-with-buttons .hover-buttons-popular {
+        bottom: 5px;
+        left: 15%;
+        right: 0px;
+    }
+    .hover-with-buttons .fas,
+    .hover-gradient .button-p {
+        display: none;
+    }
+    .hover-gradient:hover .hover-buttons-popular,
+    .hover-with-buttons:hover .hover-buttons-popular,
+    .static:hover .gradient-static{
+        opacity: 1;
+    }
+    .hover-buttons-popular button {
+        padding: 10px 15px;
+        background-color:white;
+        border: 1px solid black;
+        font-size: 14px;
+    }
+    .hover-gradient .hover-buttons-popular {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background: linear-gradient(to bottom, #42d86f4d 0%,rgba(66,215,169,0.6) 8%,rgba(51,200,120,1) 100%);
+    }
+    .hover-gradient button {
+        border-radius: 100px;
+        border-color: white;
+        padding: 30px;
+    }
+    .hover-button-price .button-p{
+        color: #84bc22;
+    }
+    .fa-heart,
+    .fa-plus {
+        font-size: 30px;
+    }
+    .fa-heart {
+        color: #e73c68;
+    }
+    .fa-plus {
+        color: #23c46e;
+    }
+    .static-card-description {
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+    .static-card-description img {
+        width: auto;
+    }
+    .static-card-description p {
+        color: white;
+        width: 60%;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+    .static-description-time {
+        display: flex;
+        align-items: baseline;
+    }
+    .static-description-time p {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .gradient-static{
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transition: all 0.3s;
+        background: linear-gradient(to bottom, rgba(203, 100, 138, 0.6) 8%,rgba(106, 94, 145, 1) 100%);
+    }
+    /* //////////////////////FULLWIDTH BIG BANNER///////////////// */
     .banner-cont h1 {
         font-size: 4vw;
     }
@@ -793,7 +883,8 @@ footer .container-unset,
         bottom: 5px;
         right: 0;
         margin: auto;
-        display: none;
+        opacity: 0;
+        transition: all 0.3s;
     }
     .hover-buttons button {
         padding: 0.7vw 1.3vw;
@@ -811,7 +902,7 @@ footer .container-unset,
         border-bottom-right-radius: 100px;
     }
     .featured-slide:hover .hover-buttons{
-        display: block;
+        opacity: 1;
     }
     .featured-slide img {
         width: 100%;
@@ -925,34 +1016,10 @@ footer .container-unset,
     .footer-submenu li {
         padding-bottom: 1vw;
     }
-}
+    
 @media (min-width: 1000px) {
     .nav-list-links img,
     .lang-link-nav img{
         display: inherit ;
     }
-}
-
-
-/*////////////////HOVER STATE///////////////// 
-.featured-slide {
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    text-align: center;
-    font-size: 1.6vw;
-    position: relative;
-}
-.hover-buttons {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    margin: auto;
-    background: linear-gradient(to bottom, rgba(135,237,47,0.3) 0%,rgba(128,231,45,0.5) 8%,rgba(47,158,25,1) 100%);
-    display: none;
-}
-.featured-slide:hover .hover-buttons{
-    display: block;
-} */
+}}
