@@ -96,27 +96,25 @@
                 </div>
             </section>    
             <div class='setting-nav'>
-
-                <ul class='lang-link-nav'>
-                    <li>    
-                        <a href="" class='lang-link'>en
-                            <img src="images/strelka.png" alt="" class='link-arrow'>
-                        </a> 
-                        
-                    </li>
-                    <li>
-                        <a href="" class='lang-link'>$ us
-                            <img src="images/strelka.png" alt="" class='link-arrow'>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                <select class="select lang-link-nav" name="language">
+                    <option disabled>EN</option>
+                    <option value="en">EN</option>
+                    <option value="fr">FR</option>
+                    <option value="ru"> RU</option>
+                </select>
+                <select class="select lang-link-nav" name="language">
+                    <option disabled>$ US</option>
+                    <option value="us">$ US</option>
+                    <option value="eur">€ EUR</option>
+                    <option value="uah">₴ UAH</option>
+                </select>
+            </div>                 
             <div class='personal-btn'>  
                 <ul class="list-buttons">
                     <li class="list-buttons-item"><a href=""><img src="images/search.png" alt="" class='icon-nav'></a></li>
                     <li class="list-buttons-item"><a href=""><img src="images/profile.png" alt="" class='icon-nav'></a></li>
-                    <li class="list-buttons-item"><a href=""><img src="images/heart.png" alt="" class='icon-nav'></a></li>
-                    <li class="list-buttons-item"><a href=""><img src="images/bag.png" alt="" class='icon-nav'></a></li>
+                    <li class="list-buttons-item"><a href="" class="add-to-fav"><img src="images/heart.png" alt="" class='icon-nav'><!-- <i class="fas fa-circle"></i>--></a></li> 
+                    <li class="list-buttons-item"><a href="" class="add-to-cart"><img src="images/bag.png" alt="" class='icon-nav'><!-- <i class="fas fa-circle">--></i></a></li>
                 </ul>
             </div>
     </header>       
