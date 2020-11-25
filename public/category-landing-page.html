@@ -159,27 +159,83 @@
             <div class='breadcrumb-links'>
                 <a href="index.html" disabled class="home-nav-link">Home</a>
                 <p>/</p>
-                <a href="#">404</a>
+                <a href="#">Services</a>
             </div>
             <div class='page-title'>
-                <hr class="hr-text" data-content="404">
+                <hr class="hr-text" data-content="Services">
             </div>
         </section>
-        <section class="container-unset alarm-notification-section">
-            <div class='image-notification'>
-                <p class='giant-notification-text'>Oops!</p>
+        <section class='filter-landing-page-section'>
+            <div class='dropdown-div'>
+                <p>Price</p>
+                <select class="select" name="price">
+                    <option disabled>$0.00 - $100.00</option>
+                    <option value="100">$0.00 - $100.00</option>
+                    <option value="100">$100.00 - $500.00</option>
+                    <option value="500">$500.00 -$1000.00</option>
+                </select>
             </div>
-            <div class='error-description-div'>
-                <p class='bold-error-text'>Sorry, this page could not be found!</p>
-                <p class='error-subtext'>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibulis et magnis dis parturient montes, nascetur rid culus mus.</p>
-                <p class='error-subtext'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                <a href="index.html" class='home-nav-link'>Go back to homepage</a>
-                <p class='bold-error-text'>Search our site</p>
-                <input type="search" placeholder="SEARCH" class='search-input'>
-                <i class='fas fa-search'></i>
+            <div class='dropdown-div'>
+                <p>Brands</p>
+                <select class="select" name="brands">
+                    <option disabled>Ukraine sport</option>
+                    <option value="ua">Ukraine sport</option>
+                    <option value="fr">Romania sport</option>
+                </select>
+            </div>
+            <div class='dropdown-div'>
+                <p>Size</p>
+                <select class="select" name="size">
+                    <option disabled>Small</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L"> Large</option>
+                </select>
+            </div>
+            <div class='dropdown-div'>
+                <p>Color</p>
+                    <div class="panel">
+                        <ul class="cp">
+                        <li class="cp__color cp__color--white active"></li>    
+                        <li class="cp__color cp__color--lightblue"></li>
+                        <li class="cp__color cp__color--black"></li>  
+                        <li class="cp__color cp__color--green"></li>
+                        <li class="cp__color cp__color--dark-blue"></li>
+                        <li class="cp__color cp__color--orange"></li>
+                        <li class="cp__color cp__color--red"></li>
+                        <li class="cp__color cp__color--wheat"></li>
+                        </ul>
+                    </div>
+            </div>
+            <div class='dropdown-div'>
+                <p>Sort by</p>
+                <select class="select" name="sort">
+                    <option disabled>Price</option>
+                    <option value="price">Price</option>
+                    <option value="popular">Popular</option>
+                    <option value="date">Date</option>
+                </select>
+            </div>
+            <div class='dropdown-div'>
+                <p>Show</p>
+                <select class="select" name="show">
+                    <option disabled>8 per page</option>
+                    <option value="8"> 8 per page</option>
+                    <option value="20">20 per page</option>
+                    <option value="50">50 per page</option>
+                </select>
             </div>
         </section>
-    
+        <section class='products-section'>
+            <div class='total-prod-quantity'>
+                <p>12,931 results in apparel</p>
+            </div>
+            <div class='popular-item container-unset'>
+                <div class="popular-item-card">
+                </div> 
+                <button class='more-prod main-page-button'><p>LOAD MORE</p>  <img src="images/loadmore.png" class="load-arrow" alt=""></button>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container-unset">
