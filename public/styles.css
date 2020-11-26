@@ -358,6 +358,7 @@ button.owl-dot {
 }
 .more-prod p {
     margin-left: 28%;
+    color: white;
 }
 .load-arrow{
     padding-left: 1.4vw;
@@ -796,6 +797,7 @@ a.ui-button:focus {
         justify-content: center;
         align-items: center;
         margin-top: 55px;
+        flex-wrap: wrap;
     }
     .breadcrumb-links a {
         margin: 0px 10px; 
@@ -815,6 +817,7 @@ a.ui-button:focus {
     }
     .page-title .hr-text::before {
         background-color: #e5e2df;
+        height: 0px;
     }
     .page-title .hr-text::after {
         font-size: 30px;
@@ -960,6 +963,45 @@ a.ui-button:focus {
         width: 180px;
         padding: 10px 0px;
         font-size: 12px;
+    }
+
+    /*//////////////////// PRODUCT PAGE HORIZONTAL CAROUSEL DIV///////////////*/
+    .simplegallery {
+        margin: 0 auto;
+        width: 417px;
+        height: 380px;
+        overflow: hidden;
+    } 
+    .simplegallery .content {
+        background: #fff;
+        position: relative;
+        width: 418px;
+        height: 270px;
+        overflow: hidden;
+    }
+    .simplegallery .content img {
+        width: 415px;
+        border: 1px solid #9c9c9c;
+    }
+    .simplegallery .thumbnail { 
+        margin-top: 5px; 
+    }
+    .simplegallery .thumbnail .thumb {
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin: 0 5px 0 0;
+        cursor: pointer;
+    } 
+    .simplegallery .thumbnail .thumb img {
+        border: 1px solid #9c9c9c;
+        width: 100px;
+    } 
+    .simplegallery .thumbnail .last { 
+        margin: 0; 
+    }  
+    .clear { c
+        lear: both; 
     }
 @media (min-width: 470px) {
     .full-width-image-2 {
@@ -1424,6 +1466,10 @@ a.ui-button:focus {
 /*////////////// BREADCRUMBS///////////////////////////*/
     .alarm-notification-section {
         flex-direction: row;
+    }
+    .page-title .hr-text::before {
+        background-color: #e5e2df;
+        height: 2px;
     }
     .page-title .hr-text::after {
         font-size: 3.5vw;

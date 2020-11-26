@@ -380,6 +380,11 @@ $(".cp__color").on('click', function() {
   });
   $(this).addClass('active');
 });
-
+$('#gallery-demo').simplegallery({
+  galltime : 400, // transition delay
+  gallcontent: '.content',
+  gallthumbnail: '.thumbnail',
+  gallthumb: '.thumb'
+});
 
 });

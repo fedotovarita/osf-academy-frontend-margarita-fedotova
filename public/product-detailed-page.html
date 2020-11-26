@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />           
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/lightslider.js"></script>
     <script  src="script.js"></script>
     <title>OSF Academy</title>
 </head>
@@ -159,82 +161,30 @@
             <div class='breadcrumb-links'>
                 <a href="index.html" disabled class="home-nav-link">Home</a>
                 <p>/</p>
-                <a href="#">Services</a>
+                <a href="index.html" class='home-nav-link'>OSF Theme</a>
+                <p>/</p>
+                <a href="#">Ruffle Front V-Neck Cardigan</a>
             </div>
             <div class='page-title'>
-                <hr class="hr-text" data-content="Services">
+                <hr class="hr-text" data-content="Ruffle Front V-Neck Cardigan">
             </div>
         </section>
         <section class='filter-landing-page-section'>
-            <div class='dropdown-div'>
-                <p>Price</p>
-                <select class="select" name="price">
-                    <option disabled>$0.00 - $100.00</option>
-                    <option value="100">$0.00 - $100.00</option>
-                    <option value="100">$100.00 - $500.00</option>
-                    <option value="500">$500.00 -$1000.00</option>
-                </select>
-            </div>
-            <div class='dropdown-div'>
-                <p>Brands</p>
-                <select class="select" name="brands">
-                    <option disabled>Ukraine sport</option>
-                    <option value="ua">Ukraine sport</option>
-                    <option value="fr">Romania sport</option>
-                </select>
-            </div>
-            <div class='dropdown-div'>
-                <p>Size</p>
-                <select class="select" name="size">
-                    <option disabled>Small</option>
-                    <option value="S">Small</option>
-                    <option value="M">Medium</option>
-                    <option value="L"> Large</option>
-                </select>
-            </div>
-            <div class='dropdown-div'>
-                <p>Color</p>
-                    <div class="panel">
-                        <ul class="cp">
-                        <li class="cp__color cp__color--white active"></li>    
-                        <li class="cp__color cp__color--lightblue"></li>
-                        <li class="cp__color cp__color--black"></li>  
-                        <li class="cp__color cp__color--green"></li>
-                        <li class="cp__color cp__color--dark-blue"></li>
-                        <li class="cp__color cp__color--orange"></li>
-                        <li class="cp__color cp__color--red"></li>
-                        <li class="cp__color cp__color--wheat"></li>
-                        </ul>
-                    </div>
-            </div>
-            <div class='dropdown-div'>
-                <p>Sort by</p>
-                <select class="select" name="sort">
-                    <option disabled>Price</option>
-                    <option value="price">Price</option>
-                    <option value="popular">Popular</option>
-                    <option value="date">Date</option>
-                </select>
-            </div>
-            <div class='dropdown-div'>
-                <p>Show</p>
-                <select class="select" name="show">
-                    <option disabled>8 per page</option>
-                    <option value="8"> 8 per page</option>
-                    <option value="20">20 per page</option>
-                    <option value="50">50 per page</option>
-                </select>
-            </div>
-        </section>
-        <section class='products-section'>
-            <div class='total-prod-quantity'>
-                <p>12,931 results in apparel</p>
-            </div>
-            <div class='popular-item container-unset'>
-                <div class="popular-item-card">
-                </div> 
-                <button class='more-prod main-page-button'><p>LOAD MORE</p>  <img src="images/loadmore.png" class="load-arrow" alt=""></button>
-            </div>
+            <div id="gallery-demo" class="simplegallery">
+                <div class="content">
+                  <img src="images/pdp-images/PG.10216885.JJ169XX.BZ.jpg">
+                  <img src="images/pdp-images/PG.10216885.JJ169XX.PZ.jpg">
+                  <img src="images/pdp-images/PG.10216885.JJ8UTXX.BZ.jpg">
+                  <img src="images/pdp-images/PG.10216885.JJ8UTXX.PZ.jpg">
+                </div>
+                <div class="clear"></div>
+                <div class="thumbnail">
+                  <div class="thumb"> <a href="#" rel="1"> <img src="images/pdp-images/PG.10216885.JJ169XX.BZ-small.jpg"> </a> </div>
+                  <div class="thumb"> <a href="#" rel="2"> <img src="images/pdp-images/PG.10216885.JJ169XX.PZ-small.jpg"> </a> </div>
+                  <div class="thumb"> <a href="#" rel="3"> <img src="images/pdp-images/PG.10216885.JJ8UTXX.BZ-small.jpg"> </a> </div>
+                  <div class="thumb"> <a href="#" rel="3"> <img src="images/pdp-images/PG.10216885.JJ8UTXX.PZ-small.jpg"> </a> </div>
+                </div>
+              </div>
         </section>
         <section class='featured-prod-carousel'>
             <div class='featured-prod container-unset'>
