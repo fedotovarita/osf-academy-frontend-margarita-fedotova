@@ -5,7 +5,7 @@
     display: flex;
     border-radius: 20px;
     position: fixed;
-    bottom: 0;
+    bottom: 20px;
     left: 0;
     right: 0;
     margin: auto;
