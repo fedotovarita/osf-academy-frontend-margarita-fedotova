@@ -1,0 +1,365 @@
+/*//////////////////// PRODUCT PAGE HORIZONTAL CAROUSEL DIV///////////////*/ 
+ 
+                    /*///////////slider//////*/
+    .thumb-slider {
+        width: 100%;
+    }
+    .thumb-slider-section {
+        display: flex;
+        justify-content: center;
+    }
+    .thumbnails-section.container-unset {
+        padding: 0;
+    }
+    .thumbnails-section {
+        display: block;
+        background-color: white;
+        margin: 10px 20px 20px 20px;
+    }
+    .thumbnails {
+        display: flex;
+        line-height: 0;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+    .thumbnails a {
+        display: block;
+        margin: 10px;
+    }
+    .thumbnails img {
+        width: 16vmin;
+        height: 16vmin;
+        opacity: 0.5;
+    }
+    .big-image img {
+        width: 100%;
+    }
+    .thumbnails .active img{
+        opacity: 1;
+    }
+    .thumb-slider-additions {
+        padding: 0 15px;
+    }
+                    /*////////////description///////////////*/
+    .image-description .price {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 25px;
+    }
+    .image-description .dropdown-div {
+        justify-content: unset;
+        max-width: 200px;
+        padding-left: 0px;
+    }
+    .image-description .new-select__list {
+        left: 0px;
+        background-color: #f1edea;
+    }
+    .image-description .product-page-btn {
+        background-color: #84bc22;
+        color: white;
+        padding: 10px 10px;
+    }
+    .buy-product-section {
+        display: flex;
+        align-items: baseline;
+    }
+                /*/////////////counter input/////////*/
+    input[type="number"] {
+        -webkit-appearance: textfield;
+            -moz-appearance: textfield;
+                appearance: textfield;
+        }
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none;
+        }
+    
+    .input-number-group {    
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid #a2a09e;
+        border-radius: 100px;
+        width: 75px;
+        height: 40px;
+        font-size: 14px;
+        margin-bottom: 25px;
+        margin-right: 20px;
+        }
+        
+        .input-number-group input[type=number]::-webkit-inner-spin-button,
+        .input-number-group input[type=number]::-webkit-outer-spin-button {
+        appearance: none;
+        }
+        
+        .input-number-group .input-number {
+        width: 15px;
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        outline: none;
+    }
+        .input-number-decrement,
+        .input-number-increment {
+            font-size: 14px;
+            cursor: pointer;
+        }
+                    /*/////////////text & socialmedia//////////*/
+    .complete{
+        display:none;
+    }
+    .teaser,
+    .complete {
+        font-size: 13px;
+    }
+    .more{
+        color: #84bc22;
+        font-size:13px;
+        cursor:pointer;
+    }
+    .icons-product-description li{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .social-media-share {
+        display: flex;
+        align-items: center;
+    }
+    .share-product-link {
+        font-size: 12px;
+        color: #a2a09e;
+        margin-right: 20px;
+    }
+                /*////////////carousel/////////*/
+    .carousel-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .page-title .popular-items-section-title::after {
+        font-size: 20px;
+    }
+    .page-title .popular-items-section-title::before {
+        height: 2px;
+        top: 67%;
+    }
+    .product-detailed-page-carousel {
+        margin-bottom: 40px;
+    }
+    .product-detailed-page-carousel .owl-dots {
+        bottom: -30px;
+    }
+    .product-detailed-page-carousel .owl-dots .owl-dot.active {
+        border-color: black;
+    }
+    .scroll-btn {
+        background-color: #84bc22;
+        width: max-content;
+        display: flex;
+        align-self: center;
+        margin-bottom: 40px;
+    }
+    .ui-tabs {
+        display: none;
+    }
+@media (min-width: 769px) {
+    /*//////////////PRODUCT-DETAILED-PAGE///////////////////////*/
+    .carousel-div {
+        display: none;
+    }
+    .buy-product-section {
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .thumbnails-section.container-unset {
+        padding: 15px 15px 40px 15px;
+    }
+    .thumbnails-section {
+        display: flex;
+        padding-bottom: 50px;
+        margin: 0px 30px 20px 30px;
+    }
+    .thumb-slider-section {
+        flex: 2;
+    }
+    .thumb-slider-additions {
+        flex: 1.03;
+        margin-left: 30px;
+    }
+    .thumb-slider-section {
+        justify-content: unset;
+        height: max-content;
+    }
+    .thumb-slider{
+        display: flex;
+    }
+    .view{
+        position:relative;
+        margin:0 0 5px;
+      }
+      .big-image {
+        width: 46vw;
+        height: 46vw;
+      }
+      .big-image img{
+        display:block;
+        width: 100%;
+      }
+      .thumbnails {
+          margin-left: 20px;
+      }
+      .thumbnails a{
+        width: 6vw;
+        height: 6vw;
+        margin: 0 0 15px 0;
+      }
+      .thumbnails a img{
+        width:100%;
+        display:block;
+        opacity: 0.5;
+      }
+      .thumbnails .active img{
+        opacity: 1;
+      }
+
+    .thumbnails {
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .thumbnails img {
+        width: 6vw;
+        height: 6vw;
+    }
+    .image-description .price {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .image-description .dropdown-div {
+        width: 70px;
+        padding-bottom: 15px;
+    }
+    .image-description .dropdown-div .select {
+        min-width: 8vw;
+    }
+    .dropdown-div {
+        padding-top: 3vw;
+    }
+    .dropdown-div .new-select {
+        padding: 0.5vw 1vw;
+        font-size: 14px;
+    }
+    .input-number-group {
+        height: 29px;
+        margin-bottom: 0px;
+    }
+    .main-page-button.product-page-btn {
+        height: 33px;
+        padding: 5px 10px;
+        font-size: 10px;
+        width: 130px;
+    }
+    .input-number-group .input-number { 
+        width: 2vw;
+    }
+    .input-number-decrement,
+    .input-number-increment {
+        font-size: 1.5vw;
+    }
+    .teaser,
+    .complete {
+        font-size: 1.2vw;
+        line-height: 1.6;
+    }
+    .share-product-link {
+        font-size: 1.2vw;
+    }
+    .ui-tabs {
+        display: block;
+        margin: -20px 30px 20px 30px;
+    }
+    .ui-tabs-nav {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        border: none;
+    }
+    .ui-tabs-tab  {
+        border: none;
+        background-color: white;
+        height: 40px;
+        padding: 10px 35px 0 35px;
+    }     
+    .ui-tabs-tab a {
+        vertical-align: middle;
+    }
+    .ui-tabs-active{
+        background-color: #262a32;
+    } 
+    .ui-tabs-anchor {
+        color: #9FA1A9;
+    }
+    .ui-tabs-active a {
+        color: white;
+    }
+    .ui-corner-top {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    } 
+    .ui-tabs-panel {
+        background-color: #262a32;
+        color: white;
+        font-size: 12px;
+        padding: 50px;
+        columns: 2;
+        column-gap: 50px;
+        line-height: 1.5;
+    }
+    .scroll-btn {
+        display: none;
+    }
+    .page-title {
+        margin-bottom: 25px;
+    }
+    .page-title .hr-text.popular-items-section-title::after {
+        font-size: 20px;
+        color: #45413e;
+    }
+    .carousel-section .featured-prod {
+        background-color: #f1edea;
+    }
+    #dialog-form {
+        background-color: white;
+    }
+    #email,
+    #password {
+        border: 1px solid #9FA1A9;
+    }
+    .ui-dialog-buttonset {
+        background-color: white;
+        padding-bottom: 50px;
+    }
+    .forget-password-button {
+        right: 0px;
+        bottom: 88px;
+    }
+    .fa-eye {
+        right: 20px;
+        bottom: 44px;
+    }
+    fieldset {
+        position: relative;
+    }
+    .ui-dialog .ui-dialog-content {
+        position: relative;
+        border: 0;
+        padding: .5em 1em;
+        background: none;
+        overflow: auto;
+    }
+    .ui-widget-overlay {
+        background: black;
+        opacity: 0.5;
+    }
+}

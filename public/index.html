@@ -11,12 +11,21 @@
     <link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/carousel-banner.css">
+    <link rel="stylesheet" href="css/popular-items.css">
+    <link rel="stylesheet" href="css/featured-products.css">
+    <link rel="stylesheet" href="css/promotion-section.css">  
+    <link rel="stylesheet" href="css/cookies.css">      
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script  src="script.js"></script>
+    <script  src="js/featured-products.js"></script>
+    <script  src="js/shared.js"></script>
+    <script  src="js/carousel-banner.js"></script>
+    <script  src="js/popular-items.js"></script>
+    <script  src="js/cookies.js"></script>  
     <title>OSF Academy</title>
 </head>
 <body>
@@ -321,7 +330,7 @@
                         <a href="" class='footer-list-links'>Contact
                             <img src="images/strelka.png" alt="" class='link-arrow'>
                             <ul class='footer-submenu hidden'>
-                                <li class="footer-submenu-links">
+                                <li class="adress-name">
                                     <p>Headquarters:<br>
                                         5600, Blvd. des Galeries, Bur 530<br>
                                         Quebec, Quebec G2K 2H6</p>
@@ -381,5 +390,20 @@
             </div>
         </div>
     </footer>
+    <div class='cookies-window'>
+        <div class='cookies-notification-section'>
+            <p class='cookies-notification-title'>
+                This website uses cookies
+            </p>
+            <p class='cookies-notification-text'>
+                OSF uses its own and third-party cookies for statistical purposes, to know your preferences, for website performance and interactionwith social media offering publicity tailored to your interests. If you continue browsing, we consider that you accept its use. You vam expand this information consulting our
+                <a href="#" class='cookies-policy-link'>Cookies Policy Page</a>
+            </p>
+        </div>
+        <div class='cookies-btns'>
+            <button class='cookies-close-btn'><a href=""><i class="fas fa-times"></i></a></button>
+            <button id="hide_popup" class='cookies-accept-btn'><a href="">ACCEPT</a></button>
+        </div>
+    </div>
 </body>
 </html>

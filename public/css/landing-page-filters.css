@@ -1,0 +1,120 @@
+.products-section .main-page-button {
+    color: white;
+    background-color: #84bc22;
+}
+.products-section .main-page-button:hover {
+    color: white;
+    background-color: #84bc22;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.filter-landing-page-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    background-color: white;
+}
+.dropdown-div {
+    flex: 1 30.3%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 26px 15px 25px 15px;
+    justify-content: space-evenly;
+}
+.dropdown-div p {
+    flex: 1;
+}
+.dropdown-div .new-select {
+    padding: 10px 15px;
+    color: black;
+    font-size: 15px;
+}
+.panel {
+    flex: 3;
+    } 
+.cp {
+    display: flex;
+    justify-content: space-between;
+    min-width: 39vw;
+}
+.cp__color {
+    width: 4vw;
+    height: 4vw;
+    background-color: #CCC;
+    margin: 5px;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    cursor:pointer;
+}
+.cp__color.active {
+    border: 2px solid black;
+}
+.cp__color--red {
+    background-color: red;
+}
+.cp__color--green {
+    background-color: green;
+}
+.cp__color--dark-blue {
+    background-color: blue;
+}
+.cp__color--white {
+    background-color: white;
+}
+.cp__color--lightblue {
+    background-color: lightblue;
+}
+.cp__color--wheat {
+    background-color: wheat;
+}
+.cp__color--black {
+    background-color: black;
+}
+.cp__color--orange {
+    background-color: orange;
+}
+.total-prod-quantity {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.products-section .popular-item {
+    display: flex;
+}
+.products-section .main-page-button {
+    width: 180px;
+    padding: 10px 0px;
+    font-size: 12px;
+}
+@media (min-width: 769px) {
+    .dropdown-div .select {
+        min-width: 200px;
+    }
+   .filter-landing-page-section span {
+       color: black;
+   }
+   .filter-landing-page-section .new-select__list {
+        width: 99%;
+        left: 0;
+        text-align: left;
+   }
+   .dropdown-div .link-arrow {
+       display: block;
+   }
+   .cp {
+       justify-content: space-between;
+       min-width: 200px;
+       width: 100%;
+   }
+   .cp__color {
+        width: 20px;
+        height: 20px;
+        margin: 0px;
+    }
+    .panel {
+        display: flex;
+        flex: 3;
+        min-width: 200px;
+    }
+}

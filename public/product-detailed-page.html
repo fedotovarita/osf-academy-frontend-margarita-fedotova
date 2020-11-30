@@ -10,16 +10,19 @@
     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />           
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/product-detailed-page.css">
+    <link rel="stylesheet" href="css/promotion-section.css">
+    <link rel="stylesheet" href="css/featured-products.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/lightslider.js"></script>
-    <script  src="script.js"></script>
-    <title>OSF Academy</title>
+    <script  src="js/shared.js"></script>
+    <script  src="js/featured-products.js"></script>
+    <script  src="js/product-detailed-page.js"></script>
+
+    <title>Product Page</title>
 </head>
 <body>
     <header>
@@ -169,38 +172,162 @@
                 <hr class="hr-text" data-content="Ruffle Front V-Neck Cardigan">
             </div>
         </section>
-        <section class='filter-landing-page-section'>
-            <div id="gallery-demo" class="simplegallery">
-                <div class="content">
-                  <img src="images/pdp-images/PG.10216885.JJ169XX.BZ.jpg">
-                  <img src="images/pdp-images/PG.10216885.JJ169XX.PZ.jpg">
-                  <img src="images/pdp-images/PG.10216885.JJ8UTXX.BZ.jpg">
-                  <img src="images/pdp-images/PG.10216885.JJ8UTXX.PZ.jpg">
-                </div>
-                <div class="clear"></div>
-                <div class="thumbnail">
-                  <div class="thumb"> <a href="#" rel="1"> <img src="images/pdp-images/PG.10216885.JJ169XX.BZ-small.jpg"> </a> </div>
-                  <div class="thumb"> <a href="#" rel="2"> <img src="images/pdp-images/PG.10216885.JJ169XX.PZ-small.jpg"> </a> </div>
-                  <div class="thumb"> <a href="#" rel="3"> <img src="images/pdp-images/PG.10216885.JJ8UTXX.BZ-small.jpg"> </a> </div>
-                  <div class="thumb"> <a href="#" rel="3"> <img src="images/pdp-images/PG.10216885.JJ8UTXX.PZ-small.jpg"> </a> </div>
-                </div>
-              </div>
-        </section>
-        <section class='featured-prod-carousel'>
-            <div class='featured-prod container-unset'>
-                <div class='featured-title'>
-                    <p class='big-title'>Featured Products</p>
-                    <p class='subtitle'>Unde omnis iste natus error sit voluptatem</p>
-                </div>
-                <div class='hr-featured'><hr class="hr-text-featured" data-content="///"></div>
-                <div class="swiper-container-2">
-                    <div class="swiper-wrapper featured-swiper">
+        <section class='thumbnails-section container-unset'>
+            <div class='thumb-slider-section'>
+                <div class="thumb-slider gallery-box">
+                    <div class="view">
+                        <div class="big-image"><img src="images/pdp-images/PG.10216885.JJ169XX.PZ.jpg" alt="image11"></div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    
+                    <div class="thumbnails">
+                        <a href="images/pdp-images/PG.10216885.JJ169XX.PZ-small.jpg" class="active"><img src="images/pdp-images/PG.10216885.JJ169XX.PZ.jpg" alt="image12"></a>
+                        <a href="images/pdp-images/PG.10216885.JJ169XX.BZ-small.jpg"><img src="images/pdp-images/PG.10216885.JJ169XX.BZ.jpg" alt="image11"></a>
+                        <a href="images/pdp-images/PG.10216885.JJ8UTXX.PZ-small.jpg"><img src="images/pdp-images/PG.10216885.JJ8UTXX.PZ.jpg" alt="image14"></a>
+                        <a href="images/pdp-images/PG.10216885.JJ8UTXX.BZ-small.jpg"><img src="images/pdp-images/PG.10216885.JJ8UTXX.BZ.jpg" alt="image13"></a>
+
+                    </div>
                 </div>
             </div>
+            <div class='thumb-slider-additions'>
+                <div class='image-description'>
+                    <p class="price">$ 299.99</p>
+                    <div class='dropdown-div'>
+                            <select class="select" name="color">
+                                <option disabled><div class="grey-color"></div> Grey</option>
+                                <option value="1"><div class="grey-color"></div> Grey</option>
+                                <option value="2"><div class="green-color"></div> Lightgreen</option>
+                            </select>
+                    </div>
+                    <div class="buy-product-section"> 
+                        <div class="input-group input-number-group">
+                            <div class="input-group-button">
+                                <span class="input-number-decrement">-</span>
+                            </div>
+                            <input class="input-number" type="number" placeholder="0" value="0" min="0" max="1000">
+                            <div class="input-group-button">
+                                <span class="input-number-increment">+</span>
+                            </div>
+                        </div>
+                        <button class='main-page-button product-page-btn'>ADD TO CART</button>
+                    </div>
+                </div>
+                <div>
+                    <span class="teaser">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, </span>
+                    <span class="complete"> totam rem aperiam, eaque ipsa quae ab illo inventore Beatae vitae dicta sunt explicabo. Nemo enim ipasm voluptatem quai voluptas.</span>
+                    <span class="more">Read more</span>
+                </div>
+                <div class='social-media-share'>
+                    <a href="#" class='share-product-link'>Share</a>
+                    <ul class='social-icons icons-product-description'>
+                        <li><a href="https://www.facebook.com/OSFDigital/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://osf.digital/" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="https://twitter.com/osfdigital" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.pinterest.ca/osfglobal/" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+            </div>          
         </section>
+        <div id="tabs">
+            <ul>
+              <li><a href="#tabs-1">Description</a></li>
+              <li><a href="#tabs-2">Additional Information</a></li>
+              <li><a href="#tabs-3">Reviews (3)</a></li>
+            </ul>
+            <div id="tabs-1">
+              <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+            </div>
+            <div id="tabs-2">
+              <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+            </div>
+            <div id="tabs-3">
+              <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+            </div>
+          </div>
+        <div class='carousel-section'>
+            <section class='featured-prod-carousel'>
+                <div class='featured-prod container-unset'>
+                    <div class='page-title'>
+                        <hr class="hr-text popular-items-section-title" data-content="Popular Items">
+                    </div>
+                    <div class="swiper-container-2">
+                        <div class="swiper-wrapper featured-swiper">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container-unset carousel-div"> 
+                <div id='js-carousel-2' class='owl-carousel product-detailed-page-carousel'>
+                    <div class="carousel-item-2">
+                        <img src="images/product_items/Layer_151.png" alt="">
+                    <span class='carousel-description'>
+                        <p>Kristina Dam Oak Table With White Marble Top</p>
+                        <p>$ 799.55</p>
+                    </span>
+                    </div> 
+                    <div class="carousel-item-2">
+                        <img src="images/product_items/Layer_157.png" alt="">
+                    <span class='carousel-description'>
+                        <p>Hay - About A Lounge Chair AAL 93</p>
+                        <p>$ 659.55</p>
+                    </span>
+                    </div> 
+                    <div class="carousel-item-2">
+                        <img src="images/product_items/Layer_153.png" alt="">
+                    <span class='carousel-description'>
+                        <p>Activate Facial Mask and Charcoal Soap</p>
+                        <p>$ 125.55</p>
+                    </span>
+                    </div> 
+                    <div class="carousel-item-2">
+                        <img src="images/product_items/Layer_154.png" alt="">
+                    <span class='carousel-description'>
+                        <p>Cocktail Table Walnut | YES</p>
+                        <p>$ 299.99</p>
+                    </span>
+                    </div> 
+                    <div class="carousel-item-2">
+                        <img src="images/product_items/Layer_152.png" alt="">
+                    <span class='carousel-description'>
+                        <p>TORY DESK CALENDAR</p>
+                        <p>$ 659.55</p>
+                    </span>
+                    </div> 
+                </div>
+            </div>
+            <button class="main-page-button scroll-btn">
+                <a href="#">SCROLL TO TOP</a> 
+            </button>
+        </div>
+        <section class='benefits-content'>
+            <div class="container-unset">
+                <div class='focus-benefit benefit-item'>
+                <div class='benefit-img'>
+                    <img src="images/focus.png" alt="">
+                </div>
+                <div class='benefit-text'>
+                    <h3 class='uppercase'>Focus</h3>
+                    <p class='benefit-p'>Our unwavering focus on superior service delivery and building next generation competencies</p>
+                </div>
+            </div>
+            <div class='method-benefit benefit-item'>
+                <div class='benefit-img'>
+                    <img src="images/method.png" alt="">
+                </div>
+                <div class='benefit-text'>
+                    <h3 class='uppercase'>Method</h3>
+                    <p class='benefit-p'>A standartized methodology designed to deliver measurable buisness results and predictable costs</p>
+                </div>
+            </div>
+            <div class='knowledge-benefit benefit-item'>
+                <div class='benefit-img'> 
+                    <img src="images/knowledge.png" alt="">
+                </div>
+                <div class='benefit-text'>
+                    <h3 class='uppercase'>Knowledge</h3>
+                    <p class='benefit-p'>A highly skilled, proactive workface that reliably improves each client's ROI while mitigating their buisness risk</p>
+                </div>
+            </div>         
+         </section>
     </main>
     <footer>
         <div class="container-unset">
@@ -214,7 +341,7 @@
                         <a href="" class='footer-list-links'>Contact
                             <img src="images/strelka.png" alt="" class='link-arrow'>
                             <ul class='footer-submenu hidden'>
-                                <li class="footer-submenu-links">
+                                <li class="adress-name">
                                     <p>Headquarters:<br>
                                         5600, Blvd. des Galeries, Bur 530<br>
                                         Quebec, Quebec G2K 2H6</p>
