@@ -1,10 +1,14 @@
+$color-white: white;
+$bright-green: #84bc22;
+$color-light-grey: #b2b2b2;
+
 .alarm-notification-section {
 	margin: 0px 30px 50px 30px;
 	padding: 50px 35px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: url(../images/oops.png) #fff no-repeat -10%;
+	background: url(../images/oops.png) $color-white no-repeat -10%;
 }
 .image-notification {
 	flex: 1.1;
@@ -19,7 +23,7 @@
 	text-align: center;
 	font-size: 100px;
 	font-weight: 900;
-	color: #84bc22;
+	color: $bright-green;
 }
 .bold-error-text {
 	font-size: 20px;
@@ -33,7 +37,7 @@
 .search-input {
 	border-radius: 100px;
 	width: 90%;
-	border: 2px solid #b2b2b2;
+	border: 2px solid $color-light-grey;
 	padding: 15px 20px;
 	outline: none;
 	margin-bottom: 50px;

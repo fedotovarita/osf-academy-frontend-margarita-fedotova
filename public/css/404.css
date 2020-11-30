@@ -1,45 +1,54 @@
 .alarm-notification-section {
-    margin: 0px 30px 50px 30px;
-    padding: 50px 35px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url(../images/oops.png) #fff no-repeat -10%;
+  margin: 0px 30px 50px 30px;
+  padding: 50px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../images/oops.png) white no-repeat -10%;
 }
+
 .image-notification {
-    flex: 1.1;
+  flex: 1.1;
 }
+
 .error-description-div {
-    flex: 1.5;
-}
-.giant-notification-text {
-    text-align: center;
-    font-size: 100px;
-    font-weight: 900;
-    color: #84bc22;
-}
-.bold-error-text {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 50px 0px 20px;
-}
-.error-subtext {
-    font-size: 14px;
-    padding-bottom: 20px;
-}
-.search-input {
-    border-radius: 100px;
-    width: 90%;
-    border: 2px solid #b2b2b2;
-    padding: 15px 20px;
-    outline: none;
-    margin-bottom: 50px;
+  flex: 1.5;
 }
 .error-description-div .fa-search {
-    margin-left: -40px;
+  margin-left: -40px;
 }
+
+.giant-notification-text {
+  text-align: center;
+  font-size: 100px;
+  font-weight: 900;
+  color: #84bc22;
+}
+
+.bold-error-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 50px 0px 20px;
+}
+
+.error-subtext {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.search-input {
+  border-radius: 100px;
+  width: 90%;
+  border: 2px solid #b2b2b2;
+  padding: 15px 20px;
+  outline: none;
+  margin-bottom: 50px;
+}
+
 @media (min-width: 769px) {
-    .alarm-notification-section {
-        flex-direction: row;
-    }
+  .alarm-notification-section {
+    flex-direction: row;
+  }
 }
+
+/*# sourceMappingURL=404.css.map */

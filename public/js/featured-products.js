@@ -10,7 +10,7 @@ function getFeaturedProducts(swiperObject) {
           data.items[i]['label'] + 
           '</p></span><div class="hover-buttons"><button class="hover-button-price">' + 
           data.items[i]['price']+ 
-          '</button><button class="hover-button-buy"><a class="add-to-cart" href="">BUY NOW</a></button></div></div>'
+          '</button><button class="hover-button-buy"><a href="">BUY NOW</a></button></div></div>'
         );
       } 
     })

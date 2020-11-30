@@ -1,7 +1,7 @@
-/* ///////////////////////FULL WIDTH BANNER BOTTOM////////////////// */
-/* ///////////////////////BENEFITS ITEMS////////////////// */
-/* //////////////////////FULLWIDTH BIG BANNER///////////////// */
-/* //////////////////////BENEFITS ITEMS///////////////// */
+$color-white: white;
+$color-brown: #45413e;
+$color-brown-grey: #868380;
+
 .full-width-image-2 {
 	min-height: 240px;
 	width: 100%;
@@ -27,27 +27,27 @@
 	text-align: center;
 	h1 {
 		font-size: 30px;
-		color: white;
+		color: $color-white;
 		margin-bottom: 25px;
 	}
 	p {
 		font-size: 14px;
-		color: white;
+		color: $color-white;
 	}
 }
 .benefits-content {
-	background-color: #45413e;
+	background-color: $color-brown;
 }
 .benefit-item {
 	display: flex;
-	color: white;
+	color: $color-white;
 	margin: 20px 0 20px 0;
 	div {
 		flex: 1;
 	}
 }
 .benefit-p {
-	color: #868380;
+	color: $color-brown-grey;
 	font-size: 11px;
 	word-wrap: break-word;
 }

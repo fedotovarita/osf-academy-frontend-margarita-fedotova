@@ -1,8 +1,17 @@
+$darker-grey: #262a32;
+$color-light-grey: #b2b2b2;
+$color-silver: #989c9f;
+$color-white: white;
+$color-black: black;
+$bright-green: #84bc22;
+$color-red: #e73c68;
+$color-green: #23c46e;
+
 .popular-items {
-	background-color: #262a32;
+	background-color: $darker-grey;
 }
 .featured-prod-carousel {
-	background-color: #262a32;
+	background-color: $darker-grey;
 }
 .popular-items-title {
 	max-width: 75%;
@@ -21,19 +30,19 @@
 	z-index: 5;
 }
 button.owl-dot {
-	background-color: #b2b2b2;
+	background-color: $color-light-grey;
 }
 .owl-carousel {
 	button.owl-dot {
 		width: 10px;
 		height: 10px;
 		border-radius: 50%;
-		background: #989c9f;
+		background: $color-silver;
 		margin: 0 3px;
 	}
 	button.owl-dot.active {
-		background: #989c9f;
-		border: 2px solid white;
+		background: $color-silver;
+		border: 2px solid $color-white;
 	}
 }
 .main-page-button {
@@ -92,11 +101,10 @@ button.owl-dot {
 	align-items: center;
 	.more-prod {
 		display: flex;
-		align-items: center;
-		padding: 0.5vw 0px;
-		width: 16vw;
-		margin: 30px 0;
-		font-size: 1.1vw;
+		padding: 8px 0px;
+		width: 150px;
+		margin: 10px 0;
+		font-size: 12px;
 	}
 }
 .static {
@@ -128,6 +136,12 @@ button.owl-dot {
 			opacity: 1;
 		}
 	}
+	button {
+		padding: 10px 15px;
+		background-color: $color-white;
+		border: 1px solid $color-black;
+		font-size: 14px;
+	}
 }
 .hover-gradient {
 	position: relative;
@@ -152,7 +166,7 @@ button.owl-dot {
 	}
 	button {
 		border-radius: 100px;
-		border-color: white;
+		border-color: transparent;
 		padding: 30px;
 	}
 }
@@ -177,7 +191,7 @@ button.owl-dot {
 		width: auto;
 	}
 	p {
-		color: white;
+		color: $color-white;
 		width: 60%;
 		line-height: 1.6;
 		margin-bottom: 10px;
@@ -185,8 +199,8 @@ button.owl-dot {
 }
 .more-prod {
 	p {
-		margin-left: 28%;
-		color: white;
+		margin-left: 25%;
+		color: $color-white;
 	}
 }
 .load-arrow {
@@ -196,25 +210,19 @@ button.owl-dot {
 	opacity: 0;
 	position: absolute;
 	transition: all 0.3s;
-	button {
-		padding: 10px 15px;
-		background-color: white;
-		border: 1px solid black;
-		font-size: 14px;
-	}
 }
 .hover-button-price {
 	.button-p {
-		color: #84bc22;
+		color: $bright-green;
 	}
 }
 .fa-heart {
 	font-size: 30px;
-	color: #e73c68;
+	color: $color-red;
 }
 .fa-plus {
 	font-size: 30px;
-	color: #23c46e;
+	color: $color-green;
 }
 .static-description-time {
 	display: flex;

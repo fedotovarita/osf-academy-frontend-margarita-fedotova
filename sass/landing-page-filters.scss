@@ -1,13 +1,23 @@
+$color-white: white;
+$bright-green: #84bc22;
+$color-black: black;
+$color-orange: orange;
+$color-bright-red: red;
+$color-classic-green: green;
+$color-classic-blue: blue;
+$color-lightblue: lightblue;
+$color-wheat: wheat;
+
 .products-section {
 	.main-page-button {
-		color: white;
-		background-color: #84bc22;
+		color: $color-white;
+		background-color: $bright-green;
 		width: 180px;
 		padding: 10px 0px;
 		font-size: 12px;
 		&:hover {
-			color: white;
-			background-color: #84bc22;
+			color: $color-white;
+			background-color: $bright-green;
 			transform: scale(1.1);
 			transition: 0.5s;
 		}
@@ -20,7 +30,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin: 30px;
-	background-color: white;
+	background-color: $color-white;
 }
 .dropdown-div {
 	flex: 1 30.3%;
@@ -34,7 +44,7 @@
 	}
 	.new-select {
 		padding: 10px 15px;
-		color: black;
+		color: $color-black;
 		font-size: 15px;
 	}
 }
@@ -49,38 +59,37 @@
 .cp__color {
 	width: 4vw;
 	height: 4vw;
-	background-color: #CCC;
 	margin: 5px;
 	border: 2px solid transparent;
 	border-radius: 100px;
 	cursor: pointer;
 }
 .cp__color.active {
-	border: 2px solid black;
+	border: 2px solid $color-black;
 }
 .cp__color--red {
-	background-color: red;
+	background-color: $color-bright-red;
 }
 .cp__color--green {
-	background-color: green;
+	background-color: $color-classic-green;
 }
 .cp__color--dark-blue {
-	background-color: blue;
+	background-color: $color-classic-blue;
 }
 .cp__color--white {
-	background-color: white;
+	background-color: $color-white;
 }
 .cp__color--lightblue {
-	background-color: lightblue;
+	background-color: $color-lightblue;
 }
 .cp__color--wheat {
-	background-color: wheat;
+	background-color: $color-wheat;
 }
 .cp__color--black {
-	background-color: black;
+	background-color: $color-black;
 }
 .cp__color--orange {
-	background-color: orange;
+	background-color: $color-orange;
 }
 .total-prod-quantity {
 	display: flex;
@@ -98,7 +107,7 @@
 	}
 	.filter-landing-page-section {
 		span {
-			color: black;
+			color: $color-black;
 		}
 		.new-select__list {
 			width: 99%;

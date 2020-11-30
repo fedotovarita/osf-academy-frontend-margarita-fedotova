@@ -1,3 +1,8 @@
+$color-white: white;
+$color-black: black;
+$bright-green: #84bc22;
+$darker-grey: #262a32;
+
 /* ///////////////////////FEATURED ITEMS DISPLAY NONE////////////////// */
 .featured-prod-carousel {
 	display: none;
@@ -12,13 +17,13 @@
 	transition: all 0.3s;
 	button {
 		padding: 0.7vw 1.3vw;
-		background-color: white;
-		border: 1px solid black;
+		background-color: $color-white;
+		border: 1px solid $color-black;
 		font-size: 1.2vw;
 	}
 }
 .hover-button-price {
-	color: #84bc22;
+	color: $bright-green;
 	border-top-left-radius: 100px;
 	border-bottom-left-radius: 100px;
 }
@@ -44,12 +49,12 @@
 	}
 	.swiper-button-next {
 		top: 9.4vw;
-		color: white;
+		color: $color-white;
 		right: 22%;
 	}
 	.swiper-button-prev {
 		top: 9.4vw;
-		color: white;
+		color: $color-white;
 		left: 22%;
 	}
 	.featured-slide {
@@ -70,13 +75,13 @@
 	}
 	.featured-prod-description {
 		padding: 1vw;
-		background-color: white;
+		background-color: $color-white;
 		height: 7.4vw;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		.featured-item-label {
-			color: #84bc22;
+			color: $bright-green;
 		}
 	}
 	.featured-prod-carousel {
@@ -94,12 +99,12 @@
 	.hr-text-featured {
 		position: relative;
 		border: 0;
-		color: white;
+		color: $color-white;
 		text-align: center;
 		width: 50vw;
 		&:before {
 			content: '';
-			background-color: white;
+			background-color: $color-white;
 			position: absolute;
 			left: 0;
 			top: 50%;
@@ -111,21 +116,21 @@
 			position: relative;
 			padding: 0 .5em;
 			line-height: 1.5em;
-			color: white;
-			background-color: #262a32;
+			color: $color-white;
+			background-color: $darker-grey;
 			font-size: 2.5vw;
 			font-weight: bold;
 		}
 	}
 	.big-title {
-		color: white;
+		color: $color-white;
 		font-size: 2.5vw;
 		font-weight: bold;
 		text-align: center;
 		line-height: 2;
 	}
 	.subtitle {
-		color: white;
+		color: $color-white;
 		text-align: center;
 		font-size: 1.4vw;
 	}

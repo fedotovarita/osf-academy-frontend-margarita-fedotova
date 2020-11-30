@@ -1,131 +1,147 @@
 /* ///////////////////////FEATURED ITEMS DISPLAY NONE////////////////// */
 .featured-prod-carousel {
-    display: none;
+  display: none;
 }
+
 .hover-buttons {
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-    right: 0;
-    margin: auto;
-    opacity: 0;
-    transition: all 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  transition: all 0.3s;
 }
 .hover-buttons button {
-    padding: 0.7vw 1.3vw;
-    background-color:white;
-    border: 1px solid black;
-    font-size: 1.2vw;
+  padding: 0.7vw 1.3vw;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 1.2vw;
 }
+
 .hover-button-price {
-    color: #84bc22;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
+  color: #84bc22;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
 }
+
 .hover-button-buy {
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
+
 @media (min-width: 769px) {
-    .featured-prod {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-    }
-    .swiper-container-2 {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        padding-top: 15vw;
-        margin-top: -15vw;
-        overflow: hidden;
-        padding-bottom: 30px;
-    }
-    .swiper-button-next,
-    .swiper-button-prev {
-        top: 9.4vw;
-        color: white
-    }
-    .swiper-button-next {
-        right: 22%;
-    }
-    .swiper-button-prev {
-        left: 22%;
-    }
-    .featured-slide {
-        display: flex;
-        flex-direction: column;
-        background-color: transparent;
-        text-align: center;
-        font-size: 1.6vw;
-        position: relative;
-    }
-    .featured-slide:hover .hover-buttons{
-        opacity: 1;
-    }
-    .featured-slide img {
-        width: 100%;
-    }
-    .featured-prod-description {
-        padding: 1vw;   
-        background-color: white;
-        height: 7.4vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .featured-prod-carousel {
-        display: block;
-    }
-    .featured-title {
-        padding: 2% 0 3% 0;
-    }
-    .featured-prod-description .featured-item-label{
-        color: #84bc22;
-    }
-    .hr-featured {
-        padding: 0 0 4% 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .hr-text-featured {
-        position: relative;
-        border: 0;
-        color: white;
-        text-align: center;
-        width: 50vw;
-    }
-    .hr-text-featured:before {
-        content: '';
-        background-color: white;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 100%;
-        height: 2px;
-    }
-    .hr-text-featured:after {
-        content: attr(data-content);
-        position: relative;
-        padding: 0 .5em;
-        line-height: 1.5em;
-        color: white;
-        background-color: #262a32;
-        font-size: 2.5vw;
-        font-weight: bold;
-    }
-    .big-title {
-        color: white;
-        font-size: 2.5vw;
-        font-weight: bold;
-        text-align: center;
-        line-height: 2;
-    }
-    .subtitle {
-        color: white;
-        text-align: center;
-        font-size: 1.4vw;
-    }
+  .featured-prod {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .swiper-container-2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 15vw;
+    margin-top: -15vw;
+    overflow: hidden;
+    padding-bottom: 30px;
+  }
+
+  .swiper-button-next {
+    top: 9.4vw;
+    color: white;
+    right: 22%;
+  }
+
+  .swiper-button-prev {
+    top: 9.4vw;
+    color: white;
+    left: 22%;
+  }
+
+  .featured-slide {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    text-align: center;
+    font-size: 1.6vw;
+    position: relative;
+  }
+  .featured-slide:hover .hover-buttons {
+    opacity: 1;
+  }
+  .featured-slide img {
+    width: 100%;
+  }
+
+  .featured-prod-description {
+    padding: 1vw;
+    background-color: white;
+    height: 7.4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .featured-prod-description .featured-item-label {
+    color: #84bc22;
+  }
+
+  .featured-prod-carousel {
+    display: block;
+  }
+
+  .featured-title {
+    padding: 2% 0 3% 0;
+  }
+
+  .hr-featured {
+    padding: 0 0 4% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hr-text-featured {
+    position: relative;
+    border: 0;
+    color: white;
+    text-align: center;
+    width: 50vw;
+  }
+  .hr-text-featured:before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+  }
+  .hr-text-featured:after {
+    content: attr(data-content);
+    position: relative;
+    padding: 0 0.5em;
+    line-height: 1.5em;
+    color: white;
+    background-color: #262a32;
+    font-size: 2.5vw;
+    font-weight: bold;
+  }
+
+  .big-title {
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2;
+  }
+
+  .subtitle {
+    color: white;
+    text-align: center;
+    font-size: 1.4vw;
+  }
 }
+
+/*# sourceMappingURL=featured-products.css.map */

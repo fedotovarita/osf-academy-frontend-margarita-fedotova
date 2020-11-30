@@ -1,134 +1,165 @@
 /* ///////////////////////CAROUSEL TOP + BANNER GREEN////////////////// */
 .car-sect {
-    margin-top: 65px;
+  margin-top: 65px;
 }
+
 .swiper-container {
-    width: 100%;
+  width: 100%;
 }
+
 .swiper-pagination-bullet-active {
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
 }
+
 .main-slide img {
-    width: auto;
+  width: auto;
 }
 .main-slide span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 1.3;
+  color: white;
+}
+
+.main-page-button a {
+  color: white;
+}
+
+.banner-green {
+  display: none;
+  margin-left: 20px;
+}
+
+.banner-right-img img {
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .banner-right-img {
+    position: relative;
+  }
+
+  .banner-img-text {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 15px;
+    z-index: 10;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    line-height: 1.3;
+    justify-content: space-evenly;
+  }
+  .banner-img-text p {
+    text-align: center;
+    margin-top: 1.5vw;
+  }
+
+  .banner-percent-text {
     color: white;
-}
-.main-page-button a {
+    font-size: 8vw;
+    font-weight: bold;
+  }
+
+  .banner-sales-text {
     color: white;
-}
-.banner-green {
-    display: none;
-    margin-left: 20px;
-}
-.banner-right-img img {
+    text-transform: uppercase;
+    font-size: 2vw;
+  }
+
+  .banner-right-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .banner-right-text p {
+    text-align: center;
+    margin-top: 1.5vw;
+  }
+
+  .banner-main-text {
+    font-size: 1.6vw;
+  }
+
+  .subtext {
+    font-size: 1.2vw;
+  }
+
+  .facebook-button {
+    width: 11vw;
+    border-radius: 100px;
+    align-items: center;
+    background-color: transparent;
+    border-color: #3a5b96;
+    color: #3a5b96;
+    text-transform: uppercase;
+    padding: 0.5vw;
+    font-size: 1vw;
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .facebook-button a {
     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .facebook-button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+
+  button .fa-facebook-f {
+    color: #3a5b96;
+    font-size: 1vw;
+  }
+
+  .swiper-container {
+    flex: 6;
+  }
+
+  .main-slide img {
+    width: 100%;
+  }
+
+  .carousel-cont {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .carousel-text h1 {
+    font-size: 3.2vw;
+  }
+  .carousel-text p {
+    font-size: 1.5vw;
+    font-weight: normal;
+    align-self: flex-start;
+  }
+
+  .main-page-button {
+    padding: 1vw 3.5vw;
+    font-size: 1.6vw;
+  }
+
+  .banner-green {
+    display: block;
+    flex: 2;
+  }
+
+  .hr-text::after {
+    font-size: 2vw;
+  }
 }
-@media (min-width: 769px) {
-    .banner-right-img{
-        position: relative;
-    }
-    .banner-img-text {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 10;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    .banner-percent-text {
-        color: white;
-        font-size: 8vw;
-        font-weight: bold;
-    }
-    .banner-sales-text {
-        color: white;
-        text-transform: uppercase;
-        font-size: 2vw;
-    } 
-    .banner-right-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .banner-right-text p,
-    .banner-img-text p {
-        text-align: center;
-        margin-top: 1.5vw;
-    }
-    .banner-main-text {
-        font-size: 1.6vw;
-    }
-    .subtext {
-        font-size: 1.2vw;
-    }
-    .facebook-button{
-        width: 11vw;
-        border-radius: 100px;
-        align-items: center;
-        background-color: transparent;
-        border-color: #3a5b96;
-        color: #3a5b96;
-        text-transform: uppercase;
-        padding: 0.5vw;
-        font-size: 1vw;
-        margin-top: 1vw;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .facebook-button a {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    button .fa-facebook-f {
-        color: #3a5b96;
-        font-size: 1vw;
-    }
-    .swiper-container {
-        flex: 6;
-    }
-    .main-slide img {
-        width: 100%;
-    }
-    .carousel-cont {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .carousel-text h1{
-        font-size: 3.2vw;
-    }
-    .carousel-text p {
-        font-size: 1.5vw;
-        font-weight: normal;
-        align-self: flex-start;
-    }
-    .main-page-button {
-        padding: 1vw 3.5vw;
-        font-size: 1.6vw;
-    }
-    .banner-green {
-        display: block;
-        flex: 2;
-    }
-    .hr-text::after {
-        font-size: 2vw;
-    }
-}
+
+/*# sourceMappingURL=carousel-banner.css.map */

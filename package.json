@@ -4,6 +4,7 @@
   "description": "This repo rocks!",
   "main": "index.js",
   "dependencies": {
+    "sass-autoprefixer": "^1.0.1",
     "sirv-cli": "^1.0.8"
   },
   "devDependencies": {},

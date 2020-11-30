@@ -1,6 +1,12 @@
+$color-white: white;
+$color-black: black;
+$bright-green: #84bc22;
+$bright-green-darker: #84bc35;
+
+
 .cookies-window {
 	width: 85%;
-	background-color: white;
+	background-color: $color-white;
 	padding: 30px;
 	display: flex;
 	border-radius: 20px;
@@ -21,11 +27,11 @@
 	flex-direction: column;
 	flex: 2;
 	justify-content: space-between;
-	align-items: end;
+	align-items: flex-end;
 }
 .cookies-notification-title {
 	font-size: 14px;
-	color: #84bc22;
+	color: $bright-green;
 	padding-bottom: 10px;
 }
 .cookies-notification-text {
@@ -33,22 +39,22 @@
 }
 .cookies-close-btn {
 	border: none;
-	background-color: white;
+	background-color: $color-white;
 	i {
-		color: black;
+		color: $color-black;
 	}
 }
 .cookies-accept-btn {
 	width: 130px;
 	padding: 5px;
 	border-radius: 100px;
-	border: 2px solid #84bc35;
-	background-color: #84bc22;
+	border: 2px solid $bright-green-darker;
+	background-color: $bright-green;
 	a {
-		color: white;
+		color: $color-white;
 		font-size: 12px;
 	}
 }
 .cookies-policy-link {
-	color: #84bc22;
+	color: $bright-green;
 }
